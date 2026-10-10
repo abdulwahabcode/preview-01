@@ -325,6 +325,11 @@
       .use:nth-child(even) { border-right: 0; }
       .use:last-child { grid-column: 1 / -1; border-top: 1px solid var(--line); }
     }
+    @media (min-width: 681px) and (max-width: 900px) {
+      .hero { min-height: 78svh; }
+      .hero-grid { padding: 104px 0 40px; gap: 8px; }
+      .hero-card { padding-top: 6px; }
+    }
     @media (max-width: 680px) {
       .container, .nav-inner, .hero-grid { width: min(100% - 28px, 1180px); }
       .nav-mark span:last-child { display: none; }
